@@ -92,7 +92,7 @@ public class Platform extends CommonMethods{
 		reportingAnls.click();
 		backNavigation();
 		timeOut();
-		
+	}
 	
 	//---%%%---TALENT Management----%%%-----
 	public void hoverTalentManagement() {
