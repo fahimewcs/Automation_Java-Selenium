@@ -7,8 +7,8 @@
         <methods>
           <include name="close"/>
           <include name="start"/>
+          <include name="platformOption"/>
           <include name="startUrl"/>
-          <include name="navigationBar"/>
         </methods>
       </class> <!-- testScripts.RunTests -->
     </classes>

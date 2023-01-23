@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import drivers.BaseDriver;
 import drivers.PageDriver;
 import webPages.HomePage;
+import webPages.Platform;
 
 public class RunTests extends BaseDriver {
 	
@@ -18,7 +19,7 @@ public class RunTests extends BaseDriver {
 		PageDriver.getCurrentDriver().manage().window().maximize();
 	}
 	
-	@Test
+	//@Test(priority=0)
 	public void navigationBar() {
 		
 		HomePage hPage = new HomePage();
@@ -29,6 +30,14 @@ public class RunTests extends BaseDriver {
 		hPage.hoverCompany();
 		hPage.clickBookFreeDemo();
 		hPage.clickContactSales();
+	}
+	
+	//@Test(priority=1)
+	public void mainBody() {
+		HomePage hPage = new HomePage();
+		
+		hPage.clickWithoutEmailTryFree();
+		hPage.sendEmail();
 		
 		hPage.clickPplMngLearnMore();
 		hPage.clickPplMngLearnIcon();
@@ -55,6 +64,19 @@ public class RunTests extends BaseDriver {
 		
 		hPage.clickTryItrFree();
 		
+		
+	}
+	
+	
+	@Test
+	public void platformOption() {
+		Platform pf = new Platform();
+        
+		
+		pf.hoverPeopleManagement();
+		pf.hoverTalentManagement();
+		pf.hoverCompensation();
+		pf.hoverCulture();
 	}
 	
 	

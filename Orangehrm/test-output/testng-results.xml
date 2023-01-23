@@ -1,25 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-21T22:57:40 BDT" name="Default suite" finished-at="2023-01-21T23:02:57 BDT" duration-ms="317695">
+  <suite started-at="2023-01-23T18:49:24 BDT" name="Default suite" finished-at="2023-01-23T18:49:33 BDT" duration-ms="9007">
     <groups>
     </groups>
-    <test started-at="2023-01-21T22:57:40 BDT" name="Default test" finished-at="2023-01-21T23:02:57 BDT" duration-ms="317695">
+    <test started-at="2023-01-23T18:49:24 BDT" name="Default test" finished-at="2023-01-23T18:49:33 BDT" duration-ms="9007">
       <class name="testScripts.RunTests">
-        <test-method is-config="true" signature="start()[pri:0, instance:testScripts.RunTests@7cc0cdad]" started-at="2023-01-21T22:57:28 BDT" name="start" finished-at="2023-01-21T22:57:40 BDT" duration-ms="11368" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:testScripts.RunTests@4d5d943d]" started-at="2023-01-23T18:49:19 BDT" name="start" finished-at="2023-01-23T18:49:24 BDT" duration-ms="5441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="startUrl()[pri:0, instance:testScripts.RunTests@7cc0cdad]" started-at="2023-01-21T22:57:40 BDT" name="startUrl" finished-at="2023-01-21T22:57:53 BDT" duration-ms="13234" status="PASS">
+        <test-method is-config="true" signature="startUrl()[pri:0, instance:testScripts.RunTests@4d5d943d]" started-at="2023-01-23T18:49:24 BDT" name="startUrl" finished-at="2023-01-23T18:49:32 BDT" duration-ms="8039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUrl -->
-        <test-method signature="navigationBar()[pri:0, instance:testScripts.RunTests@7cc0cdad]" started-at="2023-01-21T22:57:53 BDT" name="navigationBar" finished-at="2023-01-21T23:02:57 BDT" duration-ms="304334" status="PASS">
+        <test-method signature="platformOption()[pri:0, instance:testScripts.RunTests@4d5d943d]" started-at="2023-01-23T18:49:32 BDT" name="platformOption" finished-at="2023-01-23T18:49:33 BDT" duration-ms="802" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c5bb1ef8cc9e1f72fa6b4ef001063be, clickElement {id=a60ee0cc-7ec1-4828-bd1b-52f87ec972db}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51146/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6c5bb1ef8cc9e1f72fa6b4ef001063be)] -> xpath: //body/nav[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/h6[1]/a[1]]
+Session ID: 6c5bb1ef8cc9e1f72fa6b4ef001063be]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.75)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c5bb1ef8cc9e1f72fa6b4ef001063be, clickElement {id=a60ee0cc-7ec1-4828-bd1b-52f87ec972db}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51146/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6c5bb1ef8cc9e1f72fa6b4ef001063be)] -> xpath: //body/nav[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/div[1]/div[1]/h6[1]/a[1]]
+Session ID: 6c5bb1ef8cc9e1f72fa6b4ef001063be
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at webPages.Platform.hoverPeopleManagement(Platform.java:98)
+at testScripts.RunTests.platformOption(RunTests.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigationBar -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testScripts.RunTests@7cc0cdad]" started-at="2023-01-21T23:02:57 BDT" name="close" finished-at="2023-01-21T23:03:00 BDT" duration-ms="3109" status="PASS">
+        </test-method> <!-- platformOption -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testScripts.RunTests@4d5d943d]" started-at="2023-01-23T18:49:33 BDT" name="close" finished-at="2023-01-23T18:49:34 BDT" duration-ms="588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

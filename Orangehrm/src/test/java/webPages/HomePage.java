@@ -35,6 +35,18 @@ public class HomePage extends CommonMethods {
 	WebElement contactSales;
 	
 	
+	
+	
+	//----$$---Email---Try it for free----$$----
+	@FindBy(xpath = "//input[@id='Form_getForm_Email']")
+	WebElement mainPgEmail;
+	
+	@FindBy(xpath = "//input[@id='Form_getForm_action_submitForm']")
+	WebElement firstTryFree;
+	
+	
+	
+	
 	//-----$$--People Management-----
 	@FindBy(xpath = "//body[1]/div[3]/div[1]/div[1]/div[1]/section[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]/div[1]/h6[1]")
 	WebElement pplMngmntLearnMore;
@@ -147,6 +159,22 @@ public class HomePage extends CommonMethods {
 		backNavigation();
 		timeOut();
 	}
+	
+	
+	//-----$$$-- Enter Email ---- Try for Free-----
+	
+	public void clickWithoutEmailTryFree() {
+		firstTryFree.click();
+		backNavigation();
+		timeOut();
+	}
+	
+	public void sendEmail() {
+		sendText(mainPgEmail, emailGenerate());
+		firstTryFree.click();
+		timeOut();
+	}
+	
 	
 	
 	

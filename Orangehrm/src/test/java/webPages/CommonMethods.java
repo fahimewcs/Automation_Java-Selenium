@@ -1,8 +1,12 @@
 package webPages;
 
+import java.util.Locale;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import com.github.javafaker.Faker;
 
 import drivers.PageDriver;
 
@@ -58,6 +62,24 @@ public class CommonMethods {
 		public void scrollWindow(String element) {
 			JavascriptExecutor js = (JavascriptExecutor) PageDriver.getCurrentDriver();
 			js.executeScript(element);
+		}
+		
+		
+		////----Writing text in a input field
+		public void sendText(WebElement element, String value) {
+			element.clear();
+			element.sendKeys(value);
+		}
+		
+		
+		////generating fake value
+		public static Faker faker = new Faker(new Locale("en-US"));
+		
+		public static String email;
+
+		public static String emailGenerate() {
+			email = faker.bothify("????##@mail.com");
+			return email;
 		}
 
 
