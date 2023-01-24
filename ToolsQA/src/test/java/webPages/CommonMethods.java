@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import com.github.javafaker.Faker;
 
@@ -18,6 +19,16 @@ public class CommonMethods {
 		action.moveToElement(element).perform();
 	}
 	
+	//right click___________
+	public void rightClick(WebElement element) {
+		Actions action = new Actions(PageDriver.getCurrentDriver());
+		action.contextClick(element).perform();
+	}
+	
+	public void dubleClick(WebElement element) {
+		Actions action = new Actions(PageDriver.getCurrentDriver());
+		action.doubleClick(element).perform();
+	}
 	
 	//navigation back
 	public void backNavigation() {
@@ -86,9 +97,32 @@ public class CommonMethods {
 		public static String email;
 
 		public static String emailGenerate() {
-			email = faker.bothify("????##@mail.com");
+			email = faker.bothify("????##@example.com");
 			return email;
 		}
+		
+		public static String firstName;
+
+		public static String firstNameGenerate() {
+			firstName = faker.name().firstName();
+			return firstName;
+		}
+		
+		public static String address;
+
+		public static String addressGenerate() {
+			address = faker.address().fullAddress();
+			return address;
+		}
+		
+		
+		
+		//--------select-----------
+		public void selectItemByIndex(WebElement element, int index) {
+			Select selectItems = new Select(element);
+			selectItems.selectByIndex(index);
+		}
+		
 
 
 }

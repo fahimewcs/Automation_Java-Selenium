@@ -115,6 +115,7 @@ public class HomePage extends CommonMethods {
 		
 		
 		scrollPageDown();
+		timeOut();
 		widgets.click();
 		timeOut();
 		widgets.click();
