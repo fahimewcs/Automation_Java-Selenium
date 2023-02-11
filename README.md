@@ -1,2 +1,3 @@
 # Automation_Java-Selenium
-These are the autometic testing test scripts of those websites for some modules.
+These are the autometic testing test scripts of the selected websites for some modules.
+Websites- https://www.orangehrm.com/ and https://demoqa.com/menu
