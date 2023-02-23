@@ -6,23 +6,23 @@ Websites- https://www.orangehrm.com/, https://demoqa.com/menu, https://www.rokom
 
 ## Features
 
-* OrangeHrm
+* #OrangeHrm
 1. HomePage- Header, footer, body
 2. Platform
 
 
-#* ToolsQA
+* ToolsQA
 1. HomePage- Body
 2. Button
 3. Elements
 4. Forms
 
 
-#* Rokomari
+* Rokomari
 1. HomePage- Header, Sidebar, Body
 2. SignIn 
 
 
-#* GSMARENA
+* GSMARENA
 1. HomePage- Header, Foooter, Body
 
