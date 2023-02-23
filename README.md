@@ -6,7 +6,7 @@ Websites- https://www.orangehrm.com/, https://demoqa.com/menu, https://www.rokom
 
 ## Features
 
-* #OrangeHrm
+* OrangeHrm
 1. HomePage- Header, footer, body
 2. Platform
 
